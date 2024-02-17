@@ -16,7 +16,7 @@
   "web_accessible_resources": [
     {
       "resources": ["css/*.css"],
-      "extension_ids": ["pokgcjppglddgaomdkidlbcljngaflcd"]
+      "extension_ids": ["kfbkibjjmfhcgdnhjcpjjmceealpmikl"]
     }
   ],
   "content_scripts": [
