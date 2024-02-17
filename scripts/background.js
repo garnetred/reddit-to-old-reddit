@@ -3,11 +3,9 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
   if (
     changeInfo.status === "complete" &&
     tabUrl &&
-    tabUrl.includes("linkedin.com/jobs/")
+    tabUrl.includes("www.reddit.com")
   ) {
-    chrome.scripting.insertCSS({
-      target: { tabId: tabId },
-      files: ["css/global.css"],
-    });
+    const oldRedditUrl = tabUrl.replace("www", "old");
+    chrome.tabs.update(tabId, { url: oldRedditUrl });
   }
 });
