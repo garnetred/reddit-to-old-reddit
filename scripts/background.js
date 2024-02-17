@@ -6,7 +6,6 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
     tabUrl.includes("www.reddit.com")
   ) {
     const oldRedditUrl = tabUrl.replace("www", "old");
-    // const newUrl = queryParams ? `${tedditUrl}?${queryParams}` : tedditUrl;
     chrome.tabs.update(tabId, { url: oldRedditUrl });
   }
 });
