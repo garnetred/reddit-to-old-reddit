@@ -24,9 +24,10 @@
 "content_scripts": [
     {
         "matches": [
-        "*://www.linkedin.com/jobs/*"
+                "*://www.reddit.com/*"
+
       ],
-      "css": ["css/search.css", "css/view.css"]
+      "css": ["css/global.css"]
     }
 ],
   "host_permissions": [
