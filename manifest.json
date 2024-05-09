@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Reddit to Old Reddit",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Automatically redirect Reddit to the old version of the site.",
   "permissions": ["scripting"],
   "icons": {
@@ -11,12 +11,18 @@
     "128": "images/reddit-emoji-128.png"
   },
   "background": {
-    "service_worker": "scripts/background.js"
+    "service_worker": "scripts/background.js",
+    "scripts": ["scripts/background.js"]
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{6dcd5876-58a7-481f-ac1c-c1c3ee062a75}"
+    }
   },
   "web_accessible_resources": [
     {
       "resources": ["css/*.css"],
-      "extension_ids": ["kfbkibjjmfhcgdnhjcpjjmceealpmikl"]
+      "matches": ["*://www.reddit.com/*"]
     }
   ],
   "content_scripts": [
