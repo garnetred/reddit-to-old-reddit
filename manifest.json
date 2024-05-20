@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Reddit to Old Reddit",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Automatically redirect Reddit to the old version of the site.",
   "permissions": ["scripting"],
   "icons": {
