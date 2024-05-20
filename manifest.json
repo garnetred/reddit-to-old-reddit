@@ -28,7 +28,8 @@
   "content_scripts": [
     {
       "matches": ["*://www.reddit.com/*"],
-      "css": ["css/global.css"]
+      "css": ["css/global.css"],
+      "run_at": "document_start"
     }
   ],
   "host_permissions": ["*://www.reddit.com/*"],
